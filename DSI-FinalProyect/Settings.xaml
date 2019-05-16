@@ -6,9 +6,31 @@
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d"
+    RequestedTheme="Dark"
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
-    <Grid>
+    <Grid Height="1000" VerticalAlignment="Bottom">
+
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="3*"/>
+                <ColumnDefinition Width="3*"/>
+                <ColumnDefinition Width="3*"/>
+
+            </Grid.ColumnDefinitions>
+         
+
+            <Border Background="#000013" Grid.ColumnSpan="3"/>
+
+
+            <Image Margin="60,60,60,60" Source="Assets/Cloud_Cover-512.png" Grid.ColumnSpan="2"/>
+            <StackPanel Margin="40,0,0,0" VerticalAlignment="Center" Grid.ColumnSpan="2"/>
+            <StackPanel Orientation="Horizontal"
+ HorizontalAlignment="Left" VerticalAlignment="Center" Margin="750,0,0,0"/>
+        </Grid>
+        <AppBarButton Icon="Back" Click="AppBarButton_Click"  HorizontalAlignment="Left" VerticalAlignment="Top"/>
+        
 
     </Grid>
+
 </Page>

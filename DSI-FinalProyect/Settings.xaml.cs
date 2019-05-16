@@ -26,5 +26,10 @@ namespace DSi_FinalProyect
         {
             this.InitializeComponent();
         }
+
+        private void AppBarButton_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }
