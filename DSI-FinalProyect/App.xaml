@@ -1,7 +1,7 @@
 ﻿<Application
-    x:Class="DSI_FinalProyect.App"
+    x:Class="DSi_FinalProyect.App"
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-    xmlns:local="using:DSI_FinalProyect">
+    xmlns:local="using:DSi_FinalProyect">
 
 </Application>
