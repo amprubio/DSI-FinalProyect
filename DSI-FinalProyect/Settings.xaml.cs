@@ -32,5 +32,15 @@ namespace DSi_FinalProyect
             if (Frame.CanGoBack)
                 Frame.GoBack();
         }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void AppBarButton_Click_1(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }
