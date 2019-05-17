@@ -10,7 +10,18 @@
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
     <Grid>
+        <Border Background="#000013"/>
 
-        
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="3*"/>
+                <ColumnDefinition Width="3*"/>
+                <ColumnDefinition Width="3*"/>
+
+            </Grid.ColumnDefinitions>
+        </Grid>
+        <AppBarButton Icon="Clear" Click="AppBarButton_Click"  HorizontalAlignment="Right" VerticalAlignment="Top">
+          
+        </AppBarButton>
     </Grid>
 </Page>

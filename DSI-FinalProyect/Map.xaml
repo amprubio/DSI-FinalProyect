@@ -11,5 +11,17 @@
 
     <Grid>
 
+        <Border Background="#000013"/>
+        <AppBarButton Icon="Back" Click="AppBarButton_Click" HorizontalAlignment="Left"/>
+        <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="3*"/>
+            <ColumnDefinition Width="3*"/>
+            <ColumnDefinition Width="3*"/>
+        </Grid.ColumnDefinitions>
+    
+            
+        </Grid>
+
     </Grid>
 </Page>
