@@ -22,8 +22,26 @@
                     <ColumnDefinition Width="3*"/>
                     <ColumnDefinition Width="3*"/>
                 </Grid.ColumnDefinitions>
+                
+                <!--Barra de vida y balas-->
+                   <Grid HorizontalAlignment="Left" VerticalAlignment="Top" Margin="30" Height="220px" Width="500px">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="2*"/>
+                            <RowDefinition Height="2*"/>
+                        <RowDefinition Height="1*"/>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="1*"/>
+                        <ColumnDefinition Width="3*"/>
+                    </Grid.ColumnDefinitions>
+
+                    <Image Source="Assets/StoreLogo.png" Grid.Row="0" Width="100" Height="100" />
+                    <Image Source="Assets/StoreLogo.png" Grid.Row="1" Width="100" Height="100" />
+                    <TextBlock x:Name="nBalas" Grid.Row="2" Text="Balas" Foreground="White" HorizontalAlignment="Center" FontSize="30"/>
+                </Grid>
+             
+                <Image Source="Assets/StoreLogo.png" x:Name="Map" Margin="30" HorizontalAlignment="Right" Grid.Column="2" VerticalAlignment="Top" Width="350" Height="350" />
             </Grid>
-        
         </Grid>
 
     </Grid>
