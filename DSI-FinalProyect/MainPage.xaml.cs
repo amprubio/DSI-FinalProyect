@@ -23,7 +23,7 @@ namespace DSi_FinalProyect
     /// </summary>
     public sealed partial class MainPage : Page
     {
-        bool ClosingWindow;
+
         public MainPage()
         {
             // Create a Frame to act navigation context and navigate to the first page
@@ -34,13 +34,16 @@ namespace DSi_FinalProyect
             Window.Current.Content = rootFrame;
             Window.Current.Activate();
             this.InitializeComponent();
-            ClosingWindow = false;
         }
 
         private void AppBarButton_Click(object sender, RoutedEventArgs e)
         {
            
         }
-        
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            this.Frame.Navigate(typeof(Map));
+        }
     }
 }

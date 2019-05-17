@@ -19,6 +19,15 @@
                 <ColumnDefinition Width="3*"/>
 
             </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="3.5*"/>
+                <RowDefinition Height="1*"/>
+            </Grid.RowDefinitions>
+
+            <Button Grid.Row="2" Width="280" Height="200" Click="Button_Click" Margin="30">
+                
+                <Image x:Name="Image_Button" Source="Assets/StoreLogo.png" Width="100" Height="100"/>
+            </Button>
         </Grid>
         <AppBarButton Icon="Clear" Click="AppBarButton_Click"  HorizontalAlignment="Right" VerticalAlignment="Top">
           

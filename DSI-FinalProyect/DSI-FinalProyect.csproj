@@ -137,6 +137,7 @@
     <AppxManifest Include="Package.appxmanifest">
       <SubType>Designer</SubType>
     </AppxManifest>
+    <Content Include="Assets\PICO-8.ttf" />
     <None Include="DSi-FinalProyect_TemporaryKey.pfx" />
   </ItemGroup>
   <ItemGroup>
