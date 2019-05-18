@@ -12,6 +12,7 @@
     <Grid>
         <Border Background="#000013" Margin="5,-12,-5,12"/>
         <TextBlock Text="Title" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="300" Foreground="White" Width="300" FontSize="100" TextDecorations="Underline" LineHeight="6" TextAlignment="Justify"/>
+       
         <Grid>
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="100*"/>

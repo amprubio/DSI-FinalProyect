@@ -11,7 +11,7 @@
 
     <Grid Height="1000" VerticalAlignment="Bottom">
 
-        <Border Background="#000013"/>
+        <Border Background="#000013" Margin="-220,-335,-1080,-395"/>
         
         <Grid>
             <Grid.ColumnDefinitions>
@@ -25,9 +25,9 @@
                 <RowDefinition Height="5*"/>
             </Grid.RowDefinitions>
 
-            <Button Grid.Column="0" Click="Button_Click" HorizontalAlignment="Center" Width="300" Height="100"/>
-            <Button Grid.Column="1" Click="Button_Click" HorizontalAlignment="Center" Width="300" Height="100"/>
-            <Button Grid.Column="2" Click="Button_Click" HorizontalAlignment="Center" Width="300" Height="100"/>
+            <Button Grid.Column="0" Click="Button_Click" Margin="0,30,0,0" HorizontalAlignment="Center" Width="300" Height="100"/>
+            <Button Grid.Column="1" Click="Button_Click" Margin="0,30,0,0" HorizontalAlignment="Center" Width="300" Height="100"/>
+            <Button Grid.Column="2" Click="Button_Click" Margin="0,30,0,0" HorizontalAlignment="Center" Width="300" Height="100"/>
            
             <Button Grid.Column="3" Grid.Row="1" VerticalAlignment="Top" Width="100" Height="100"/>
             <Button Grid.Column="3" Grid.Row="1" VerticalAlignment="Top" Width="100" Height="100" Margin="0,200"/>
