@@ -40,12 +40,17 @@ namespace DSi_FinalProyect
 
         private void Button_Click_2(object sender, RoutedEventArgs e)
         {
-           //Aqui se abriria un listview con los idiomas
+         //Acceso directo a info del perfil 
         }
 
         private void Button_Click_4(object sender, RoutedEventArgs e)
         {
+            //Aqui se abriria un listview con los idiomas
+        }
 
+        private void Button_Click_3(object sender, RoutedEventArgs e)
+        {
+            //Acceso al tutorial
         }
     }
 }
