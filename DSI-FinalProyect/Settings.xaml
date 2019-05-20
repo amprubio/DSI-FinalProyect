@@ -14,31 +14,28 @@
         <Border Background="#000013" Margin="-220,-335,-1080,-395"/>
         
         <Grid>
-            <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="3*"/>
-                <ColumnDefinition Width="3*"/>
-                <ColumnDefinition Width="3*"/>
-                <ColumnDefinition Width="1*"/>
-            </Grid.ColumnDefinitions>
             <Grid.RowDefinitions>
                 <RowDefinition Height="1*"/>
-                <RowDefinition Height="5*"/>
-            </Grid.RowDefinitions>
-
-            <Button Grid.Column="0" Click="Button_Click" Margin="0,30,0,0" HorizontalAlignment="Center" Width="300" Height="100"/>
-            <Button Grid.Column="1" Click="Button_Click" Margin="0,30,0,0" HorizontalAlignment="Center" Width="300" Height="100"/>
-            <Button Grid.Column="2" Click="Button_Click" Margin="0,30,0,0" HorizontalAlignment="Center" Width="300" Height="100"/>
-           
-            <Button Grid.Column="3" Grid.Row="1" VerticalAlignment="Top" Width="100" Height="100"/>
-            <Button Grid.Column="3" Grid.Row="1" VerticalAlignment="Top" Width="100" Height="100" Margin="0,200"/>
-
-            <Grid Grid.ColumnSpan="3" Grid.Row="1">
+                <RowDefinition Height="3*"/>
+                <RowDefinition Height="3*"/>
+                <RowDefinition Height="3*"/>
                 
+            </Grid.RowDefinitions>
+            
+            <Button Grid.Row="1" Click="Button_Click" Margin="30" HorizontalAlignment="Left" Width="200" Height="100"/>
+            <Button Grid.Row="2" Click="Button_Click" Margin="30" HorizontalAlignment="Left" Width="200" Height="100"/>
+            <Button Grid.Row="3" Click="Button_Click" Margin="30" HorizontalAlignment="Left" Width="200" Height="100"/>
+           
+
+            <Grid Grid.RowSpan="4" HorizontalAlignment="Right" Width="1000" x:Name="SettingGrid">
+                
+
             </Grid>
-        
+
+            <AppBarButton Icon="Back" Grid.Row="0" Click="AppBarButton_Click"  HorizontalAlignment="Left" VerticalAlignment="Bottom"/>
+            <AppBarButton Icon="Clear" Click="AppBarButton_Click_1"  HorizontalAlignment="Right" VerticalAlignment="Bottom"/>
         </Grid>
-        <AppBarButton Icon="Back" Click="AppBarButton_Click"  HorizontalAlignment="Left" VerticalAlignment="Top"/>
-        <AppBarButton Icon="Clear" Click="AppBarButton_Click_1"  HorizontalAlignment="Right" VerticalAlignment="Top"/>
+     
 
 
     </Grid>
