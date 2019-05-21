@@ -11,31 +11,100 @@
 
     <Grid Height="1000" VerticalAlignment="Bottom">
 
-        <Border Background="#000013" Margin="-220,-335,-1080,-395"/>
-        
-        <Grid>
-            <Grid.RowDefinitions>
-                <RowDefinition Height="1*"/>
-                <RowDefinition Height="3*"/>
-                <RowDefinition Height="3*"/>
-                <RowDefinition Height="3*"/>
-                
-            </Grid.RowDefinitions>
-            
-            <Button Grid.Row="1" Click="Button_Click" Margin="30" HorizontalAlignment="Left" Width="200" Height="100"/>
-            <Button Grid.Row="2" Click="Button_Click" Margin="30" HorizontalAlignment="Left" Width="200" Height="100"/>
-            <Button Grid.Row="3" Click="Button_Click" Margin="30" HorizontalAlignment="Left" Width="200" Height="100"/>
-           
+        <Border Background="#000013"/>
 
-            <Grid Grid.RowSpan="4" HorizontalAlignment="Right" Width="1000" x:Name="SettingGrid">
-                
+        <Grid>
+            <Grid.ColumnDefinitions>
+
+                <ColumnDefinition Width="3*"/>
+                <ColumnDefinition Width="3*"/>
+                <ColumnDefinition Width="3*"/>
+
+            </Grid.ColumnDefinitions>
+            <!--GridRow 0 es para los botones de atras y cerrar-->
+            <Button x:Name="Button_0" Grid.Column="0" Click="Button_0_Click" Margin="50" HorizontalAlignment="Right" VerticalAlignment="Top" Width="200" Height="80">
+                <TextBlock Text="Controles" Width="150" Height="70" FontSize="30"/>
+            </Button>
+            <Button  x:Name="Button_1" Grid.Column="1" Click="Button_1_Click" Margin="50" HorizontalAlignment="Center" VerticalAlignment="Top" Width="200" Height="80">
+                <TextBlock Text="Audio" Width="150" Height="70" FontSize="30"/>
+            </Button>
+            <Button x:Name="Button_2" Grid.Column="2" Click="Button_2_Click" Margin="50" HorizontalAlignment="Left" VerticalAlignment="Top" Width="200" Height="80">
+                <TextBlock Text="Perfil" Width="150" Height="70" FontSize="30"/>
+            </Button>
+
+
+            <Grid x:Name="GridButton_0"  Visibility="Collapsed" Grid.ColumnSpan="3" HorizontalAlignment="Center" VerticalAlignment="Bottom" Width="1000" Height="800">
+                <StackPanel>
+                    <AppBarToggleButton Icon="Accept" Width="50" Height="50" HorizontalAlignment="Left" Margin="-12,0,0,0" VerticalAlignment="Top" Checked="AppBarToggleButton_Checked">
+
+                    </AppBarToggleButton>
+                    <TextBlock Text="Modo Zurdo" Width="200" Height="80" FontSize="30" HorizontalAlignment="Left" Margin="80,-50,0,0"/>
+                </StackPanel>
+                <StackPanel  HorizontalAlignment="Left" VerticalAlignment="Top"  Width="400" Height="100" Margin="0,100,0,0">
+                    <AppBarToggleButton Icon="Edit" Width="50" Height="50" HorizontalAlignment="Left" Margin="-12,0,0,0" VerticalAlignment="Top">
+
+                    </AppBarToggleButton>
+                    <TextBlock Text=" Boton disparo" Width="200" Height="80" FontSize="30" HorizontalAlignment="Left" Margin="80,-50,0,0"/>
+
+                </StackPanel>
+
+
+                <Image HorizontalAlignment="Right" Source="Assets/StoreLogo.png" VerticalAlignment="Top" Width="500" Height="400"/>
+            </Grid>
+
+            <Grid x:Name="GridButton_1" Visibility="Collapsed" Grid.ColumnSpan="3" HorizontalAlignment="Center" VerticalAlignment="Bottom" Width="1000" Height="800">
+                <StackPanel>
+                    <AppBarToggleButton Icon="MusicInfo" Width="50" Height="50" HorizontalAlignment="Left" Margin="-12,0,0,0" VerticalAlignment="Top" Checked="AppBarToggleButton_Checked">
+
+                    </AppBarToggleButton>
+                    <TextBlock Text="Volumen audio" Width="200" Height="80" FontSize="30" HorizontalAlignment="Left" Margin="80,-50,0,0"/>
+               
+                    <AppBarToggleButton Icon="Mute" Width="50" Height="50" HorizontalAlignment="Left" Margin="-12,0,0,0" VerticalAlignment="Top">
+
+                    </AppBarToggleButton>
+                    <TextBlock Text="Desactivar Audio" Width="300" Height="80" FontSize="30" HorizontalAlignment="Left" Margin="80,-50,0,0"/>
+
+                </StackPanel>
+                <StackPanel Margin="0,200,0,0" >
+                    <AppBarToggleButton Icon="MusicInfo" Width="50" Height="50" HorizontalAlignment="Left" Margin="-12,0,0,0" VerticalAlignment="Top" Checked="AppBarToggleButton_Checked">
+
+                    </AppBarToggleButton>
+                    <TextBlock Text="Volumen efectos" Width="250" Height="80" FontSize="30" HorizontalAlignment="Left" Margin="80,-50,0,0"/>
+
+                    <AppBarToggleButton Icon="Mute" Width="50" Height="50" HorizontalAlignment="Left" Margin="-12,0,0,0" VerticalAlignment="Top">
+
+                    </AppBarToggleButton>
+                    <TextBlock Text="Desactivar efectos" Width="300" Height="80" FontSize="30" HorizontalAlignment="Left" Margin="80,-50,0,0"/>
+
+                </StackPanel>
+
 
             </Grid>
 
-            <AppBarButton Icon="Back" Grid.Row="0" Click="AppBarButton_Click"  HorizontalAlignment="Left" VerticalAlignment="Bottom"/>
-            <AppBarButton Icon="Clear" Click="AppBarButton_Click_1"  HorizontalAlignment="Right" VerticalAlignment="Bottom"/>
+            <Grid x:Name="GridButton_2" Visibility="Visible" Grid.ColumnSpan="3" HorizontalAlignment="Center" VerticalAlignment="Bottom" Width="1000" Height="800">
+                <StackPanel>
+                    <AppBarToggleButton Icon="Edit" Width="50" Height="50" HorizontalAlignment="Left" Margin="-12,0,0,0" VerticalAlignment="Top" Checked="AppBarToggleButton_Checked">
+
+                    </AppBarToggleButton>
+                    <TextBlock Text="Name: " Width="200" Height="80" FontSize="30" HorizontalAlignment="Left" Margin="80,-50,0,0"/>
+                </StackPanel>
+                <StackPanel Margin="0,150,0,0" >
+                  
+                    <TextBlock  Text="Enemigos muertos" Width="250" Height="80" FontSize="30" HorizontalAlignment="Left" Margin="80,-50,0,0"/>
+
+                    <AppBarToggleButton Icon="Delete" Width="50" Height="50" HorizontalAlignment="Left" Margin="-12,0,0,0" VerticalAlignment="Top">
+
+                    </AppBarToggleButton>
+                    <TextBlock Text="Borrar cuenta" Width="300" Height="80" FontSize="30" HorizontalAlignment="Left" Margin="80,-50,0,0"/>
+
+                </StackPanel>
+                <Image Source="Assets/StoreLogo.png" HorizontalAlignment="Right" VerticalAlignment="Top" Width="300" Height="300" Margin="30" />
+            </Grid>
         </Grid>
-     
+
+        <AppBarButton Icon="Back" Click="AppBarButton_Click"  HorizontalAlignment="Left" VerticalAlignment="Top"/>
+        <AppBarButton Icon="Clear" Click="AppBarButton_Click_1"  HorizontalAlignment="Right" VerticalAlignment="Top" />
+
 
 
     </Grid>

@@ -22,8 +22,12 @@ namespace DSi_FinalProyect
     /// </summary>
     public sealed partial class Settings : Page
     {
+        private int order;
+        private bool ModoZurdo;
         public Settings()
         {
+            ModoZurdo = false;
+            order = 0;
             this.InitializeComponent();
         }
 
@@ -33,14 +37,65 @@ namespace DSi_FinalProyect
                 Frame.GoBack();
         }
 
-        private void Button_Click(object sender, RoutedEventArgs e)
+        private void AppBarButton_Click_1(object sender, RoutedEventArgs e)
         {
 
         }
 
-        private void AppBarButton_Click_1(object sender, RoutedEventArgs e)
+        private void Button_0_Click(object sender, RoutedEventArgs e)
         {
+            if (GridButton_1.Visibility == Visibility.Visible)
+            {
+                GridButton_1.Visibility = Visibility.Collapsed;
+            }
+            if (GridButton_2.Visibility == Visibility.Visible)
+            {
+                GridButton_2.Visibility = Visibility.Collapsed;
+            }
+            GridButton_0.Visibility = Visibility.Visible;
 
+        }
+
+        private void Button_1_Click(object sender, RoutedEventArgs e)
+        {
+            if (GridButton_0.Visibility == Visibility.Visible)
+            {
+                GridButton_0.Visibility = Visibility.Collapsed;
+            }
+            if (GridButton_2.Visibility == Visibility.Visible)
+            {
+                GridButton_2.Visibility = Visibility.Collapsed;
+            }
+            GridButton_1.Visibility = Visibility.Visible;
+        }
+
+        private void Button_2_Click(object sender, RoutedEventArgs e)
+        {
+            if (GridButton_0.Visibility == Visibility.Visible)
+            {
+                GridButton_0.Visibility = Visibility.Collapsed;
+            }
+            if (GridButton_1.Visibility == Visibility.Visible)
+            {
+                GridButton_1.Visibility = Visibility.Collapsed;
+            }
+            GridButton_2.Visibility = Visibility.Visible;
+
+        }
+        public bool GetModeZurdo()
+        {
+            return ModoZurdo;
+        }
+        private void AppBarToggleButton_Checked(object sender, RoutedEventArgs e)
+        {
+            if (ModoZurdo)
+            {
+                ModoZurdo = false;
+            }
+            else
+            {
+                ModoZurdo = true;
+            }
         }
     }
 }
