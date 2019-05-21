@@ -47,8 +47,6 @@
                     <TextBlock Text=" Boton disparo" Width="200" Height="80" FontSize="30" HorizontalAlignment="Left" Margin="80,-50,0,0"/>
 
                 </StackPanel>
-
-
                 <Image HorizontalAlignment="Right" Source="Assets/StoreLogo.png" VerticalAlignment="Top" Width="500" Height="400"/>
             </Grid>
 
@@ -86,19 +84,21 @@
                     <AppBarToggleButton Icon="Edit" Width="50" Height="50" HorizontalAlignment="Left" Margin="-12,0,0,0" VerticalAlignment="Top" Checked="AppBarToggleButton_Checked">
 
                     </AppBarToggleButton>
-                    <TextBlock Text="Name: " Width="200" Height="80" FontSize="30" HorizontalAlignment="Left" Margin="80,-50,0,0"/>
+                    <TextBlock x:Name="NameText" Text="Name: " Width="200" Height="80" FontSize="30" HorizontalAlignment="Left" Margin="80,-50,0,0"/>
                 </StackPanel>
                 <StackPanel Margin="0,150,0,0" >
                   
-                    <TextBlock  Text="Enemigos muertos" Width="250" Height="80" FontSize="30" HorizontalAlignment="Left" Margin="80,-50,0,0"/>
+                    <TextBlock x:Name="EnemiesInfo" Text="Enemigos muertos" Width="250" Height="80" FontSize="30" HorizontalAlignment="Left" Margin="80,-50,0,0"/>
 
-                    <AppBarToggleButton Icon="Delete" Width="50" Height="50" HorizontalAlignment="Left" Margin="-12,0,0,0" VerticalAlignment="Top">
+                    <AppBarToggleButton Icon="Delete" Width="50" Height="50" HorizontalAlignment="Left" Margin="0,0,0,-60"/>
 
-                    </AppBarToggleButton>
-                    <TextBlock Text="Borrar cuenta" Width="300" Height="80" FontSize="30" HorizontalAlignment="Left" Margin="80,-50,0,0"/>
+
+                    <TextBlock Text="Borrar cuenta" Width="300" Height="80" FontSize="30" HorizontalAlignment="Left" Margin="80,0,0,0"/>
 
                 </StackPanel>
-                <Image Source="Assets/StoreLogo.png" HorizontalAlignment="Right" VerticalAlignment="Top" Width="300" Height="300" Margin="30" />
+                <TextBlock  Text="EXP" FontSize="30" x:Name="EXP_Text" HorizontalAlignment="Right" Width="150" Height="80" Margin="90"/>
+                <Image Source="Assets/StoreLogo.png" HorizontalAlignment="Right" VerticalAlignment="Top" Width="300" Height="300" Margin="70" />
+                <AppBarButton Icon="Edit" HorizontalAlignment="Right"/>
             </Grid>
         </Grid>
 

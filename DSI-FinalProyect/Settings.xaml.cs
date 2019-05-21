@@ -17,9 +17,7 @@ using Windows.UI.Xaml.Navigation;
 
 namespace DSi_FinalProyect
 {
-    /// <summary>
-    /// Una página vacía 0que se puede usar de forma independiente o a la que se puede navegar dentro de un objeto Frame.
-    /// </summary>
+
     public sealed partial class Settings : Page
     {
         
