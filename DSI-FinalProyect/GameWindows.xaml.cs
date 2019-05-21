@@ -32,17 +32,10 @@ namespace DSi_FinalProyect
 
             this.InitializeComponent();
         }
-
-        private void HyperlinkButton_Click(object sender, RoutedEventArgs e)
+        private void Shoot_Button_Click(object sender, RoutedEventArgs e)
         {
             numbalas--;
             nBalas.Text = numbalas.ToString();
-
-        }
-
-        private void Shoot_Button_Click(object sender, RoutedEventArgs e)
-        {
-
         }
     }
 }

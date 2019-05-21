@@ -82,7 +82,7 @@
                 <!--Mapa-->
                 <Image Source="Assets/StoreLogo.png" x:Name="Map" Margin="30" HorizontalAlignment="Right" Grid.Column="2" VerticalAlignment="Top" Width="350" Height="350" />
                 <!--Boton disparo-->
-                <HyperlinkButton Grid.Column="2" Width="150" Height="150" VerticalAlignment="Bottom" Margin="100" HorizontalAlignment="Right">
+                <HyperlinkButton Grid.Column="2" Width="150" Height="150" VerticalAlignment="Bottom" Margin="100" HorizontalAlignment="Right"  x:Name="Shoot_Button" Click="Shoot_Button_Click">
                     <Image   Source="Assets/StoreLogo.png">
 
                     </Image>
