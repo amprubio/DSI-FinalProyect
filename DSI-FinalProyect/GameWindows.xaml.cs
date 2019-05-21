@@ -20,11 +20,29 @@ namespace DSi_FinalProyect
     /// <summary>
     /// Una página vacía que se puede usar de forma independiente o a la que se puede navegar dentro de un objeto Frame.
     /// </summary>
+    
     public sealed partial class GameWindows : Page
     {
+        const int MAXBALAS =99;
+        private int numbalas;
         public GameWindows()
         {
+            numbalas = MAXBALAS;
+            nBalas.Text = numbalas.ToString();
+
             this.InitializeComponent();
+        }
+
+        private void HyperlinkButton_Click(object sender, RoutedEventArgs e)
+        {
+            numbalas--;
+            nBalas.Text = numbalas.ToString();
+
+        }
+
+        private void Shoot_Button_Click(object sender, RoutedEventArgs e)
+        {
+
         }
     }
 }
