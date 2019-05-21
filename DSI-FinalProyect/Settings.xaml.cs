@@ -22,13 +22,18 @@ namespace DSi_FinalProyect
     /// </summary>
     public sealed partial class Settings : Page
     {
-        private int order;
+        
         private bool ModoZurdo;
         public Settings()
         {
             ModoZurdo = false;
-            order = 0;
+            Player p = new Player();
+            p.Inicio();
             this.InitializeComponent();
+
+            NameText.Text = "Name: " + p.Profile;
+            EnemiesInfo.Text= "Enemigos muertos: "+p.GetEnemiesKilled().ToString();
+            EXP_Text.Text = "EXP: " + p.GetEXP();
         }
 
         private void AppBarButton_Click(object sender, RoutedEventArgs e)
