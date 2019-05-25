@@ -34,8 +34,40 @@ namespace DSi_FinalProyect
         }
         private void Shoot_Button_Click(object sender, RoutedEventArgs e)
         {
-            numbalas--;
-            nBalas.Text = numbalas.ToString();
+            if (numbalas > 0)
+            {
+                numbalas--;
+                nBalas.Text = numbalas.ToString();
+            }
+        }
+
+        private void BotonResume_Click(object sender, RoutedEventArgs e)
+        {
+            if (PauseGrid.Visibility == Visibility.Visible)
+            {
+                PauseGrid.Visibility = Visibility.Collapsed;
+            }
+        }
+
+        private void BotonOptions_Click(object sender, RoutedEventArgs e)
+        {
+            if (PauseGrid.Visibility == Visibility.Visible)
+            {
+                PauseGrid.Visibility = Visibility.Collapsed;
+            }
+        }
+
+        private void BotonExit_Click(object sender, RoutedEventArgs e)
+        {
+            var rootFrame = new Frame();
+            rootFrame.Navigate(typeof(MainPage));
+        }
+
+        private void BotonOptions_Click_1(object sender, RoutedEventArgs e)
+        {
+
+            var rootFrame = new Frame();
+            rootFrame.Navigate(typeof(Settings));
         }
     }
 }

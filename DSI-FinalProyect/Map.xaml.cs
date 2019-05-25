@@ -37,5 +37,15 @@ namespace DSi_FinalProyect
         {
 
         }
+
+        private void DRAW_BUTTON_Click(object sender, RoutedEventArgs e)
+        {
+            //Aqui iria la funcionalidad de dibujar que no es de mi ocupacion realmente
+        }
+
+        private void ERASE_BUTTON_Click(object sender, RoutedEventArgs e)
+        {
+            //Aqui iria la funcionalidad de  borrar que no es de mi ocupacion realmente
+        }
     }
 }

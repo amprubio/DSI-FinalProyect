@@ -11,8 +11,10 @@
 
     <Grid>
         <Border Background="#000013" Margin="5,-12,-5,12"/>
-        <TextBlock Text="Title" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="300" Foreground="White" Width="300" FontSize="100" TextDecorations="Underline" LineHeight="6" TextAlignment="Justify"/>
-       
+        <!--Referencia de donde va el titulo-->
+        <TextBlock Text="Title" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="100" Foreground="White" Width="300" FontSize="100" TextDecorations="Underline" LineHeight="6" TextAlignment="Justify"/>
+        <!--Logo-->
+        <Image Source="Assets/StoreLogo.png" Width="500" Height="200" Margin="200,50,200,200" />
         <Grid>
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="100*"/>
@@ -29,6 +31,7 @@
 
             <!--Profile-->
             <Button Grid.Row="0" Grid.Column="3" Width="200" Height="170" Click="Button_Click_2" Margin="0,60,60,0" HorizontalAlignment="Right" Background="#000044" VerticalAlignment="Top"/>
+            <Button Grid.Row="0" Grid.Column="3" Width="100" Height="100" Click="Button_Click_3" Margin="0,0,60,70" HorizontalAlignment="Right" Background="#000044" VerticalAlignment="Center"/>
 
             <!--Language-->
             <Button Grid.Row="0" Grid.Column="0" Width="200" Height="170" Click="Button_Click_4" Margin="60,60,0,0" Background="#000044" VerticalAlignment="Top"/>

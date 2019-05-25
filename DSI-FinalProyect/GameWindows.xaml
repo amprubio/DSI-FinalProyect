@@ -22,11 +22,11 @@
                     <ColumnDefinition Width="3*"/>
                     <ColumnDefinition Width="3*"/>
                 </Grid.ColumnDefinitions>
-                
+
                 <!--Barra de vida y balas-->
-                   <Grid HorizontalAlignment="Left" VerticalAlignment="Top" Margin="30" Height="280px" Width="500px">
-                        <Grid.RowDefinitions>
-                            <RowDefinition Height="2*"/>
+                <Grid HorizontalAlignment="Left" VerticalAlignment="Top" Margin="50" Height="280px" Width="500px">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="2*"/>
                         <RowDefinition Height="1*"/>
                         <RowDefinition Height="2*"/>
                         <RowDefinition Height="1*"/>
@@ -40,56 +40,86 @@
                     <Image Source="Assets/StoreLogo.png" Grid.Row="2" Width="100" Height="100" />
                     <TextBlock x:Name="nBalas" Grid.Row="3" Text="Balas" Foreground="White" HorizontalAlignment="Center" FontSize="30"/>
                 </Grid>
-            <!-- Grid Cruceta-->
-                <Grid  x:Name="GridController" Margin="-50,30,0,50" Height="300" Width="300" VerticalAlignment="Bottom">
-                    <Grid.RowDefinitions>
-                        <RowDefinition Height="2*"/>
-                        <RowDefinition Height="0.5*" />
-                        <RowDefinition Height="2*"/>
-                        <RowDefinition Height="0.5*" />
-                        <RowDefinition Height="2*"/>
-                    </Grid.RowDefinitions>
-                    <Grid.ColumnDefinitions>
-                        <ColumnDefinition Width="1*"/>
-                        <ColumnDefinition Width="0.5*"/>
-                        <ColumnDefinition Width="1*"/>
-                        <ColumnDefinition Width="0.5*"/>
-                        <ColumnDefinition Width="1*"/>
-                    </Grid.ColumnDefinitions>
+                <!-- Grid Cruceta-->
+                    <Grid  x:Name="GridController" Margin="-50,30,0,50" Height="300" Width="300" VerticalAlignment="Bottom">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="2*"/>
+                            <RowDefinition Height="0.5*" />
+                            <RowDefinition Height="2*"/>
+                            <RowDefinition Height="0.5*" />
+                            <RowDefinition Height="2*"/>
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="1*"/>
+                            <ColumnDefinition Width="0.5*"/>
+                            <ColumnDefinition Width="1*"/>
+                            <ColumnDefinition Width="0.5*"/>
+                            <ColumnDefinition Width="1*"/>
+                        </Grid.ColumnDefinitions>
 
-                    <Button Grid.Column="2" Width="70" Height="70" >
-                        <Image   Source="Assets/StoreLogo.png">
+                        <Button Grid.Column="2" Width="70" Height="70" >
+                            <Image   Source="Assets/StoreLogo.png">
 
-                        </Image>
-                    </Button>
-                    <Button Grid.Column="2" Grid.Row="4" Width="70" Height="70">
-                        <Image   Source="Assets/StoreLogo.png">
+                            </Image>
+                        </Button>
+                        <Button Grid.Column="2" Grid.Row="4" Width="70" Height="70">
+                            <Image   Source="Assets/StoreLogo.png">
 
-                        </Image>
-                    </Button>
-                    <Button Grid.Column="0" Grid.Row="2" Width="70" Height="70">
-                        <Image   Source="Assets/StoreLogo.png">
+                            </Image>
+                        </Button>
+                        <Button Grid.Column="0" Grid.Row="2" Width="70" Height="70">
+                            <Image   Source="Assets/StoreLogo.png">
 
-                        </Image>
-                    </Button>
-                    <Button Grid.Column="4" Grid.Row="2" Width="70" Height="70">
-                        <Image   Source="Assets/StoreLogo.png">
+                            </Image>
+                        </Button>
+                        <Button Grid.Column="4" Grid.Row="2" Width="70" Height="70">
+                            <Image   Source="Assets/StoreLogo.png">
 
-                        </Image>
-                    </Button>
+                            </Image>
+                        </Button>
 
 
-                </Grid>
-                <!--Mapa-->
-                <Image Source="Assets/StoreLogo.png" x:Name="Map" Margin="30" HorizontalAlignment="Right" Grid.Column="2" VerticalAlignment="Top" Width="250" Height="250" />
+                    </Grid>
+                    <!--Mapa-->
+                <Image Source="Assets/StoreLogo.png" x:Name="Map" Margin="50" HorizontalAlignment="Right" Grid.Column="2" VerticalAlignment="Top" Width="250" Height="250"/>
+                <Image Source="Assets/StoreLogo.png" x:Name="Frame" Margin="30" HorizontalAlignment="Right" Grid.Column="2" VerticalAlignment="Top" Width="300" Height="300"/>
+
+                
+
                 <!--Boton disparo-->
-                <HyperlinkButton Grid.Column="2" Width="150" Height="150" VerticalAlignment="Bottom" Margin="100" HorizontalAlignment="Right"  x:Name="Shoot_Button" Click="Shoot_Button_Click">
-                    <Image   Source="Assets/StoreLogo.png">
+                    <HyperlinkButton Grid.Column="2" Width="150" Height="150" VerticalAlignment="Bottom" Margin="100" HorizontalAlignment="Right"  x:Name="Shoot_Button" Click="Shoot_Button_Click">
+                        <Image   Source="Assets/StoreLogo.png">
 
-                    </Image>
-                </HyperlinkButton>
+                        </Image>
+                    </HyperlinkButton>
+                </Grid>
+                <!--Grid menu pausa-->
+                <Grid Width="600" Height="600" x:Name="PauseGrid" Visibility="Collapsed">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="3*"/>
+                        <RowDefinition Height="1*"/>
+                      
+                        <RowDefinition Height="3*"/>
+                        <RowDefinition Height="1*"/>
+
+                        <RowDefinition Height="3*"/>
+                        <RowDefinition Height="1*"/>
+                
+                    </Grid.RowDefinitions>
+
+                <Button Grid.Row="0" x:Name="BotonResume" Click="BotonResume_Click">
+                    <Image Width="600" Height="150" Source="Assets/StoreLogo.png"/>
+                </Button>
+
+                <Button Grid.Row="2" x:Name="BotonOptions" Click="BotonOptions_Click_1">
+                    <Image Width="600" Height="150" Source="Assets/StoreLogo.png"/>
+                </Button>
+
+
+                <Button Grid.Row="4" x:Name="BotonExit" Click="BotonExit_Click">
+                    <Image Width="600" Height="150" Source="Assets/StoreLogo.png"/>
+                </Button>
             </Grid>
-            
         </Grid>
 
     </Grid>
