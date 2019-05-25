@@ -94,7 +94,7 @@
                     </HyperlinkButton>
                 </Grid>
                 <!--Grid menu pausa-->
-                <Grid Width="600" Height="600" x:Name="PauseGrid" Visibility="Collapsed">
+                <Grid Width="600" Height="600" x:Name="PauseGrid" Visibility="Collapsed" >
                     <Grid.RowDefinitions>
                         <RowDefinition Height="3*"/>
                         <RowDefinition Height="1*"/>
@@ -107,18 +107,19 @@
                 
                     </Grid.RowDefinitions>
 
-                <Button Grid.Row="0" x:Name="BotonResume" Click="BotonResume_Click">
-                    <Image Width="600" Height="150" Source="Assets/StoreLogo.png"/>
-                </Button>
+                <Button Grid.Row="0" x:Name="BotonResume0" Click="BotonResume_Click" HorizontalAlignment="Center" Width="250" Height="100" Background="#000013">
+                   </Button>
+                <Image  Grid.Row="0" HorizontalAlignment="Center" VerticalAlignment="Center" Width="400" Height="350" Source="Assets/Interfaz_DSI/ResumeButton.png"/>
 
-                <Button Grid.Row="2" x:Name="BotonOptions" Click="BotonOptions_Click_1">
-                    <Image Width="600" Height="150" Source="Assets/StoreLogo.png"/>
-                </Button>
+                <Button Grid.Row="2" x:Name="BotonOptions" Click="BotonOptions_Click_1" HorizontalAlignment="Center" Width="250" Height="100" Background="#000013">
+                   </Button>
+                <Image  Grid.Row="2" HorizontalAlignment="Center" VerticalAlignment="Center" Width="400" Height="350" Source="Assets/Interfaz_DSI/OptionsButton.png"/>
 
 
-                <Button Grid.Row="4" x:Name="BotonExit" Click="BotonExit_Click">
-                    <Image Width="600" Height="150" Source="Assets/StoreLogo.png"/>
+                <Button Grid.Row="4" x:Name="BotonExit" Click="BotonExit_Click" HorizontalAlignment="Center" Width="250" Height="100" Background="#000013">
+                    
                 </Button>
+                <Image  Grid.Row="4" HorizontalAlignment="Center" VerticalAlignment="Center" Width="400" Height="350" Source="Assets/Interfaz_DSI/ExitButton.png"/>
             </Grid>
         </Grid>
 

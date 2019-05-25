@@ -12,9 +12,8 @@
     <Grid>
         <Border Background="#000013" Margin="5,-12,-5,12"/>
         <!--Referencia de donde va el titulo-->
-        <TextBlock Text="Title" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="100" Foreground="White" Width="300" FontSize="100" TextDecorations="Underline" LineHeight="6" TextAlignment="Justify"/>
         <!--Logo-->
-        <Image Source="Assets/StoreLogo.png" Width="500" Height="200" Margin="200,50,200,200" />
+        <Image Source="Assets/Interfaz_DSI/Title.png" Width="1000" Height="300" Margin="200,-200,200,200" />
         <Grid>
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="100*"/>
@@ -30,17 +29,19 @@
 
 
             <!--Profile-->
-            <Button Grid.Row="0" Grid.Column="3" Width="200" Height="170" Click="Button_Click_2" Margin="0,60,60,0" HorizontalAlignment="Right" Background="#000044" VerticalAlignment="Top"/>
+            <Button Grid.Row="0" Grid.Column="3" Width="200" Height="170" Click="Button_Click_2" Margin="0,60,60,0" HorizontalAlignment="Right" Background="#000013" VerticalAlignment="Top">
+                <Image Width="200" Height="200" Source="Assets/Interfaz_DSI/SpriteUsuario.png" />
+            </Button>
             <Button Grid.Row="0" Grid.Column="3" Width="100" Height="100" Click="Button_Click_3" Margin="0,0,60,70" HorizontalAlignment="Right" Background="#000044" VerticalAlignment="Center"/>
 
-            <!--Language-->
+            <!--Tutorial-->
             <Button Grid.Row="0" Grid.Column="0" Width="200" Height="170" Click="Button_Click_4" Margin="60,60,0,0" Background="#000044" VerticalAlignment="Top"/>
-            
-            <Button Grid.Row="1" Width="200" Height="200" Click="Button_Click_1" Margin="60,0,0,0" Background="#000013">
-                <Image HorizontalAlignment="Left" x:Name="Image_Button" Source="Assets/StoreLogo.png" Width="180" Height="180"/>
+          
+            <Button Grid.Row="1" Grid.Column="0"  HorizontalAlignment="Left" Width="300" Height="200" Click="Button_Click_1" Margin="60,0,0,60" Background="#000013">
+                <Image HorizontalAlignment="Right" x:Name="Image_Button1"   Source="Assets/Interfaz_DSI/OptionsButton.png" Width="300" Height="280"/>
             </Button>
-            <Button Grid.Row="1" Grid.Column="3"  HorizontalAlignment="Right" Width="200" Height="200" Click="Button_Click" Margin="0,0,60,0" Background="#000013">
-                <Image HorizontalAlignment="Right" x:Name="Image_Button2" Source="Assets/StoreLogo.png" Width="180" Height="180"/>
+            <Button Grid.Row="1" Grid.Column="3"  HorizontalAlignment="Right" Width="300" Height="200" Click="Button_Click" Margin="0,0,60,60" Background="#000013">
+                <Image HorizontalAlignment="Right" x:Name="Image_Button2"   Source="Assets/Interfaz_DSI/PlayButton.png" Width="300" Height="280"/>
             </Button>
 
         </Grid>
