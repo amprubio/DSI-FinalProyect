@@ -33,7 +33,7 @@
             </Button>
 
 
-            <Grid x:Name="GridButton_0"  Visibility="Collapsed" Grid.ColumnSpan="3" HorizontalAlignment="Center" VerticalAlignment="Bottom" Width="1000" Height="800">
+            <Grid x:Name="GridButton_0"  Visibility="Visible" Grid.ColumnSpan="3" HorizontalAlignment="Center" VerticalAlignment="Bottom" Width="1000" Height="800">
                 <StackPanel>
                     <AppBarToggleButton Icon="Accept" Width="50" Height="50" HorizontalAlignment="Left" Margin="-12,0,0,0" VerticalAlignment="Top" Checked="AppBarToggleButton_Checked">
 
@@ -47,7 +47,7 @@
                     <TextBlock Text=" Boton disparo" Width="200" Height="80" FontSize="30" HorizontalAlignment="Left" Margin="80,-50,0,0"/>
 
                 </StackPanel>
-                <Image HorizontalAlignment="Right" Source="Assets/StoreLogo.png" VerticalAlignment="Top" Width="500" Height="400"/>
+                <Image HorizontalAlignment="Right" Source="Assets/Sprite-0001.png" VerticalAlignment="Top" Width="500" Height="400"/>
             </Grid>
 
             <Grid x:Name="GridButton_1" Visibility="Collapsed" Grid.ColumnSpan="3" HorizontalAlignment="Center" VerticalAlignment="Bottom" Width="1000" Height="800">
@@ -79,7 +79,7 @@
 
             </Grid>
 
-            <Grid x:Name="GridButton_2" Visibility="Visible" Grid.ColumnSpan="3" HorizontalAlignment="Center" VerticalAlignment="Bottom" Width="1000" Height="800">
+            <Grid x:Name="GridButton_2" Visibility="Collapsed" Grid.ColumnSpan="3" HorizontalAlignment="Center" VerticalAlignment="Bottom" Width="1000" Height="800">
                 <StackPanel>
                     <AppBarToggleButton Icon="Edit" Width="50" Height="50" HorizontalAlignment="Left" Margin="-12,0,0,0" VerticalAlignment="Top" Checked="AppBarToggleButton_Checked">
 

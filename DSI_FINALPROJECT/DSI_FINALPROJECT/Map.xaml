@@ -12,7 +12,7 @@
     <Grid>
 
         <Border Background="#000013"/>
-        <AppBarButton Icon="Clear"  HorizontalAlignment="Right" Margin="0,0,0,0" VerticalAlignment="Top" Width="Auto"/>
+        <AppBarButton Icon="Clear" Click="AppBarButton_Click_1"  HorizontalAlignment="Right" Margin="0,0,0,0" VerticalAlignment="Top" Width="Auto"/>
 
         <AppBarButton Icon="Back" Click="AppBarButton_Click" HorizontalAlignment="Stretch" Margin="0,0,1432,0" VerticalAlignment="Top" Width="Auto"/>
         <Grid HorizontalAlignment="Stretch" Margin="0,-76,0,76" VerticalAlignment="Stretch">

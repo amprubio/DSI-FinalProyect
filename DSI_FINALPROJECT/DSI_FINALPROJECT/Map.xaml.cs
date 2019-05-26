@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Runtime.InteropServices.WindowsRuntime;
+using Windows.ApplicationModel.Core;
 using Windows.Foundation;
 using Windows.Foundation.Collections;
 using Windows.UI.Xaml;
@@ -48,9 +49,9 @@ namespace DSi_FinalProyect
             //Aqui iria la funcionalidad de  borrar que no es de mi ocupacion realmente
         }
 
-        private void AppBarButton_Click_1()
+        private void AppBarButton_Click_1(object sender, RoutedEventArgs e)
         {
-
+            CoreApplication.Exit();
         }
     }
 }
