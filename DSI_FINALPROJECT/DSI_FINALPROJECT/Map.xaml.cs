@@ -47,5 +47,10 @@ namespace DSi_FinalProyect
         {
             //Aqui iria la funcionalidad de  borrar que no es de mi ocupacion realmente
         }
+
+        private void AppBarButton_Click_1()
+        {
+
+        }
     }
 }

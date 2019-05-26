@@ -1,4 +1,5 @@
-﻿using Windows.UI.Xaml;
+﻿using Windows.ApplicationModel.Core;
+using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
 
 // La plantilla de elemento Página en blanco está documentada en https://go.microsoft.com/fwlink/?LinkId=402352&clcid=0xc0a
@@ -16,16 +17,16 @@ namespace DSi_FinalProyect
             // Create a Frame to act navigation context and navigate to the first page
             var rootFrame = new Frame();
             rootFrame.Navigate(typeof(MainPage));
-
             // Place the frame in the current Window and ensure that it is active
             Window.Current.Content = rootFrame;
             Window.Current.Activate();
             this.InitializeComponent();
         }
-
+        //Cierra el juego
         private void AppBarButton_Click(object sender, RoutedEventArgs e)
         {
 
+            CoreApplication.Exit();
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
