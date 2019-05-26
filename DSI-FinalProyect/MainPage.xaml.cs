@@ -45,7 +45,19 @@ namespace DSi_FinalProyect
 
         private void Button_Click_4(object sender, RoutedEventArgs e)
         {
-            //Aqui se abriria un listview con los idiomas
+            
+            if (ENG.Visibility==Visibility.Visible)
+            {
+                ENG.Visibility = Visibility.Collapsed;
+                ESP.Visibility = Visibility.Visible;
+           
+            }
+           else if (ESP.Visibility == Visibility.Visible)
+            {
+                ENG.Visibility = Visibility.Visible;
+                ESP.Visibility = Visibility.Collapsed;
+
+            }
         }
 
         private void Button_Click_3(object sender, RoutedEventArgs e)

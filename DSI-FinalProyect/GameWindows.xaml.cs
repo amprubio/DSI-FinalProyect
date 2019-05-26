@@ -65,7 +65,6 @@ namespace DSi_FinalProyect
 
         private void BotonOptions_Click_1(object sender, RoutedEventArgs e)
         {
-
             var rootFrame = new Frame();
             rootFrame.Navigate(typeof(Settings));
         }

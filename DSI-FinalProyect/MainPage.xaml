@@ -10,7 +10,7 @@
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
     <Grid>
-        <Border Background="#000013" Margin="5,-12,-5,12"/>
+        <Border Background="#000013"/>
         <!--Referencia de donde va el titulo-->
         <!--Logo-->
         <Image Source="Assets/Interfaz_DSI/Title.png" Width="1000" Height="300" Margin="200,-200,200,200" />
@@ -34,9 +34,16 @@
             </Button>
             <Button Grid.Row="0" Grid.Column="3" Width="100" Height="100" Click="Button_Click_3" Margin="0,0,60,70" HorizontalAlignment="Right" Background="#000044" VerticalAlignment="Center"/>
 
-            <!--Tutorial-->
-            <Button Grid.Row="0" Grid.Column="0" Width="200" Height="170" Click="Button_Click_4" Margin="60,60,0,0" Background="#000044" VerticalAlignment="Top"/>
-          
+            <!--Language-->
+            <Button x:Name="ENG" Grid.Row="0" Grid.Column="0" Width="150" Height="150" Click="Button_Click_4" Margin="60,60,0,0" Background="#000013" VerticalAlignment="Top">
+                <Image  Source="Assets/LanguageButtons/UKButton.png" Width="400" Height="400" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+               
+            </Button>
+            <Button x:Name="ESP" Visibility="Collapsed" Grid.Row="0" Grid.Column="0" Width="150" Height="150" Click="Button_Click_4" Margin="60,60,0,0" Background="#000013" VerticalAlignment="Top">
+                <Image  Source="Assets/LanguageButtons/SpainButton.png" Width="400" Height="400" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+
+            </Button>
+
             <Button Grid.Row="1" Grid.Column="0"  HorizontalAlignment="Left" Width="300" Height="200" Click="Button_Click_1" Margin="60,0,0,60" Background="#000013">
                 <Image HorizontalAlignment="Right" x:Name="Image_Button1"   Source="Assets/Interfaz_DSI/OptionsButton.png" Width="300" Height="280"/>
             </Button>
