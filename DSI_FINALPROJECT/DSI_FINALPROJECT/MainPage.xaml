@@ -32,7 +32,9 @@
             <Button Grid.Row="0" Grid.Column="3" Width="200" Height="170" Click="Button_Click_2" Margin="0,60,60,0" HorizontalAlignment="Right" Background="#000013" VerticalAlignment="Top">
                 <Image Width="200" Height="200" Source="Assets/Interfaz_DSI/SpriteUsuario.png" />
             </Button>
-            <Button Grid.Row="0" Grid.Column="3" Width="100" Height="100" Click="Button_Click_3" Margin="0,0,60,70" HorizontalAlignment="Right" Background="#000044" VerticalAlignment="Center"/>
+            <Button Grid.Row="0" Grid.Column="3" Width="100" Height="100" Click="Button_Click_3" Margin="0,0,60,70" HorizontalAlignment="Right" Background="#000013" VerticalAlignment="Center">
+                <Image Width="250" Height="250" HorizontalAlignment="Center" VerticalAlignment="Center" Source="Assets/Interfaz_DSI/TutorialIcon.png"/>
+            </Button>
 
             <!--Language-->
             <Button x:Name="ENG" Grid.Row="0" Grid.Column="0" Width="150" Height="150" Click="Button_Click_4" Margin="60,60,0,0" Background="#000013" VerticalAlignment="Top">

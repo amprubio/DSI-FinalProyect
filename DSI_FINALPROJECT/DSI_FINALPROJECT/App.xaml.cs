@@ -1,4 +1,5 @@
-﻿using System;
+﻿using DSi_FinalProyect;
+using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
@@ -15,7 +16,7 @@ using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
 
-namespace DSi_FinalProyect
+namespace DSI_FINALPROJECT
 {
     /// <summary>
     /// Proporciona un comportamiento específico de la aplicación para complementar la clase Application predeterminada.
@@ -33,7 +34,7 @@ namespace DSi_FinalProyect
         }
 
         /// <summary>
-        /// Se invoca cuando la aplicación la inicia normalmente el usuario final. Se usarán otros puntos
+        /// Se invoca cuando el usuario final inicia la aplicación normalmente. Se usarán otros puntos
         /// de entrada cuando la aplicación se inicie para abrir un archivo específico, por ejemplo.
         /// </summary>
         /// <param name="e">Información detallada acerca de la solicitud y el proceso de inicio.</param>
