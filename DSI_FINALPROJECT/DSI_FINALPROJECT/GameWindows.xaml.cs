@@ -30,7 +30,10 @@ namespace DSi_FinalProyect
             numbalas = MAXBALAS;
             nBalas.Text = numbalas.ToString();
 
+            
             this.InitializeComponent();
+       
+            
         }
         private void Shoot_Button_Click(object sender, RoutedEventArgs e)
         {
@@ -67,6 +70,12 @@ namespace DSi_FinalProyect
         {
             var rootFrame = new Frame();
             rootFrame.Navigate(typeof(Settings));
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            var rootFrame = new Frame();
+            rootFrame.Navigate(typeof(Map));
         }
     }
 }

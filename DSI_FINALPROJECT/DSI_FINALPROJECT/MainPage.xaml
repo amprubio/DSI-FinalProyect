@@ -37,14 +37,50 @@
             </Button>
 
             <!--Language-->
-            <Button x:Name="ENG" Grid.Row="0" Grid.Column="0" Width="150" Height="150" Click="Button_Click_4" Margin="60,60,0,0" Background="#000013" VerticalAlignment="Top">
-                <Image  Source="Assets/LanguageButtons/UKButton.png" Width="400" Height="400" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+            <Button x:Name="Language_SP" Visibility="Collapsed" Grid.Row="0" Grid.Column="0" Width="150" Height="150" Click="Language_Click" Margin="60,60,0,0" Background="#000013" VerticalAlignment="Top">
+                <Image x:Name="Language_ESP" Width="450" Height="450" HorizontalAlignment="Center" VerticalAlignment="Center" Source="Assets/LanguageButtons/SpainButton.png"/>
                
             </Button>
-            <Button x:Name="ESP" Visibility="Collapsed" Grid.Row="0" Grid.Column="0" Width="150" Height="150" Click="Button_Click_4" Margin="60,60,0,0" Background="#000013" VerticalAlignment="Top">
-                <Image  Source="Assets/LanguageButtons/SpainButton.png" Width="400" Height="400" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+            <Button x:Name="Language_UK" Grid.Row="0" Grid.Column="0" Width="150" Height="150" Click="Language_Click" Margin="60,60,0,0" Background="#000013" VerticalAlignment="Top">
+                <Image x:Name="Language_ENG" Width="450" Height="450" HorizontalAlignment="Center" VerticalAlignment="Center" Source="Assets/LanguageButtons/UKButton.png"/>
 
             </Button>
+            <Button x:Name="Language_DEU" Visibility="Collapsed" Grid.Row="0" Grid.Column="0" Width="150" Height="150" Click="Language_Click" Margin="60,60,0,0" Background="#000013" VerticalAlignment="Top">
+                <Image x:Name="Language_ALE" Margin="0,0,0,0" Width="150" Height="150" HorizontalAlignment="Center" VerticalAlignment="Center" Source="Assets/LanguageButtons/ALE_Button.png"/>
+
+            </Button>
+            
+            <!--Menu-->
+            <Grid x:Name="Language_Grid" Visibility="Collapsed" Grid.Row="0"  Width="300" Height="300" VerticalAlignment="Top" Margin="150" >
+                 <Grid.RowDefinitions>
+                    <RowDefinition Height="1*"/>
+                    <RowDefinition Height="1*"/>
+                    <RowDefinition Height="1*"/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="1*"/>
+
+                    <ColumnDefinition Width="2*"/>
+                </Grid.ColumnDefinitions>
+
+                <Image Width="200" Height="200" HorizontalAlignment="Center" VerticalAlignment="Center" Source="Assets/LanguageButtons/UKButton.png"/>
+                <Image Grid.Row="1" Width="200" Height="200" HorizontalAlignment="Center" VerticalAlignment="Center" Source="Assets/LanguageButtons/SpainButton.png"/>
+                <Image Grid.Row="2" Width="90" Height="70" HorizontalAlignment="Center" VerticalAlignment="Center" Source="Assets/LanguageButtons/ALE_Button.png"/>
+
+                <Button x:Name="ENG" Grid.Column="0" Grid.Row="0" Click="ENG_Click" Height="100" Width="300">
+                    
+                </Button>
+                <Button x:Name="ESP" Grid.Column="0" Grid.Row="1" Click="ESP_Click" Height="100" Width="300">
+
+                </Button>
+
+                <Button x:Name="ALE" Grid.Column="0" Grid.Row="2" Click="ALE_Click" Height="100" Width="300">
+
+                </Button>
+
+
+
+            </Grid>
 
             <Button Grid.Row="1" Grid.Column="0"  HorizontalAlignment="Left" Width="300" Height="200" Click="Button_Click_1" Margin="60,0,0,60" Background="#000013">
                 <Image HorizontalAlignment="Right" x:Name="Image_Button1"   Source="Assets/Interfaz_DSI/OptionsButton.png" Width="300" Height="280"/>

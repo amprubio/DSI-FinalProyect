@@ -155,6 +155,7 @@
     <Content Include="Assets\Interfaz_DSI\SpriteUsuario.png" />
     <Content Include="Assets\Interfaz_DSI\Title.png" />
     <Content Include="Assets\Interfaz_DSI\TutorialIcon.png" />
+    <Content Include="Assets\LanguageButtons\ALE_Button.png" />
     <Content Include="Assets\LanguageButtons\SpainButton.png" />
     <Content Include="Assets\LanguageButtons\UKButton.png" />
     <Content Include="Assets\Sprite-0001.png" />

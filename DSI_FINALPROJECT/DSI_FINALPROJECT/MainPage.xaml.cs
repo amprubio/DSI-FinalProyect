@@ -43,29 +43,51 @@ namespace DSi_FinalProyect
         {
             
             this.Frame.Navigate(typeof(Settings));
-        }
-
-        private void Button_Click_4(object sender, RoutedEventArgs e)
-        {
-            
-            if (ENG.Visibility==Visibility.Visible)
-            {
-                ENG.Visibility = Visibility.Collapsed;
-                ESP.Visibility = Visibility.Visible;
-           
-            }
-           else if (ESP.Visibility == Visibility.Visible)
-            {
-                ENG.Visibility = Visibility.Visible;
-                ESP.Visibility = Visibility.Collapsed;
-
-            }
-        }
+        }   
 
         private void Button_Click_3(object sender, RoutedEventArgs e)
         {
             //Acceso al tutorial (no funcional)
             this.Frame.Navigate(typeof(GameWindows));
+        }
+
+
+        private void Language_Click(object sender, RoutedEventArgs e)
+        {
+            if (Language_Grid.Visibility == Visibility.Collapsed)
+            {
+                Language_Grid.Visibility = Visibility.Visible;
+
+            }
+        }
+
+        private void ENG_Click(object sender, RoutedEventArgs e)
+        {
+
+            Language_UK.Visibility = Visibility.Visible;
+            Language_DEU.Visibility = Visibility.Collapsed;
+            Language_SP.Visibility = Visibility.Collapsed;
+            
+            Language_Grid.Visibility = Visibility.Collapsed;
+
+        }
+
+        private void ESP_Click(object sender, RoutedEventArgs e)
+        {
+            Language_SP.Visibility = Visibility.Visible;
+            Language_UK.Visibility = Visibility.Collapsed;
+            Language_DEU.Visibility = Visibility.Collapsed;
+            Language_Grid.Visibility = Visibility.Collapsed;
+
+        }
+
+        private void ALE_Click(object sender, RoutedEventArgs e)
+        {
+            Language_DEU.Visibility = Visibility.Visible;
+            Language_SP.Visibility = Visibility.Collapsed;
+            Language_UK.Visibility = Visibility.Collapsed;
+
+            Language_Grid.Visibility = Visibility.Collapsed;
         }
     }
 }
