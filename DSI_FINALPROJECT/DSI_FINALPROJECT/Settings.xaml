@@ -21,6 +21,7 @@
                 <ColumnDefinition Width="3*"/>
 
             </Grid.ColumnDefinitions>
+            
             <!--GridRow 0 es para los botones de atras y cerrar-->
             <Button x:Name="Button_0" Grid.Column="0" Click="Button_0_Click" Margin="50" HorizontalAlignment="Right" VerticalAlignment="Top" Width="200" Height="80">
                 <TextBlock Text="Controles" Width="150" Height="70" FontSize="30"/>
@@ -33,7 +34,7 @@
             </Button>
 
 
-            <Grid x:Name="GridButton_0"  Visibility="Visible" Grid.ColumnSpan="3" HorizontalAlignment="Center" VerticalAlignment="Bottom" Width="1000" Height="800">
+            <Grid x:Name="GridButton_0"  Visibility="Collapsed" Grid.ColumnSpan="3" HorizontalAlignment="Center" VerticalAlignment="Bottom" Width="1000" Height="800">
                 <StackPanel>
                     <AppBarToggleButton Icon="Accept" Width="50" Height="50" HorizontalAlignment="Left" Margin="-12,0,0,0" VerticalAlignment="Top" Checked="AppBarToggleButton_Checked">
 
@@ -50,7 +51,7 @@
                 <Image HorizontalAlignment="Right" Source="Assets/Sprite-0001.png" VerticalAlignment="Top" Width="500" Height="400"/>
             </Grid>
 
-            <Grid x:Name="GridButton_1" Visibility="Collapsed" Grid.ColumnSpan="3" HorizontalAlignment="Center" VerticalAlignment="Bottom" Width="1000" Height="800">
+            <Grid x:Name="GridButton_1" Visibility="Visible" Grid.ColumnSpan="3" HorizontalAlignment="Center" VerticalAlignment="Bottom" Width="1000" Height="800">
                 <StackPanel>
                     <AppBarToggleButton Icon="MusicInfo" Width="50" Height="50" HorizontalAlignment="Left" Margin="-12,0,0,0" VerticalAlignment="Top" Checked="AppBarToggleButton_Checked">
 
