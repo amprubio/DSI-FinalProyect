@@ -38,6 +38,14 @@ namespace DSi_FinalProyect
         {
             Level = level;
         }
+        public int GetDamage()
+        {
+            return damage;
+        }
+        public void SetDamage(int newDamage)
+        {
+            damage = newDamage;
+        }
         public int GetEnemiesKilled()
         {
             return EnemKilled;
