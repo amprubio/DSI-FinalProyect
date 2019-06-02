@@ -24,7 +24,7 @@
                 </Grid.ColumnDefinitions>
 
                 <!--Barra de vida y balas-->
-                <Grid HorizontalAlignment="Left" VerticalAlignment="Top" Margin="50" Height="200px" Width="500px">
+                <Grid HorizontalAlignment="Left" VerticalAlignment="Top" Margin="50" Height="200px" Width="530px">
                     <Grid.RowDefinitions>
                         <RowDefinition Height="2*"/>
                         <RowDefinition Height="1*"/>
@@ -44,7 +44,7 @@
                     <Image Source="Assets/Interfaz_DSI/Heart.png" Width="150" Height="150" HorizontalAlignment="Left" VerticalAlignment="Center" Grid.ColumnSpan="3" Margin="50,0,0,0" />
                     <Image Source="Assets/Interfaz_DSI/Heart.png" Grid.Row="0" Grid.Column="2" Width="150" Height="150" HorizontalAlignment="Center" VerticalAlignment="Center" />
                     <Image Source="Assets/Interfaz_DSI/Heart.png" Grid.Row="0" Grid.Column="3" Width="150" Height="150" HorizontalAlignment="Center" VerticalAlignment="Center" />
-                    <Image Source="Assets/Interfaz_DSI/Heart.png" Grid.Row="0" Grid.Column="5" Width="150" Height="150" HorizontalAlignment="Center" VerticalAlignment="Center" />
+                    <Image Source="Assets/Interfaz_DSI/Heart.png" Grid.Row="0" Grid.Column="4" Width="150" Height="150" HorizontalAlignment="Center" VerticalAlignment="Center" />
 
                     <Image Source="Assets/Interfaz_DSI/Bullet.png" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Row="2" Width="150" Height="150" />
                     <TextBlock x:Name="nBalas" Grid.Row="3" Text="Balas" Foreground="White" HorizontalAlignment="Center" FontSize="30"/>
@@ -67,16 +67,16 @@
                     </Grid.ColumnDefinitions>
 
                     <Button Grid.Column="2" Width="70" Height="70" Background="#000013">
-                      
+
                     </Button>
                     <Button Grid.Column="2" Grid.Row="4" Width="70" Height="70" Background="#000013">
-                       
+
                     </Button>
                     <Button Grid.Column="0" Grid.Row="2" Width="70" Height="70" Background="#000013">
-                       
+
                     </Button>
                     <Button Grid.Column="4" Grid.Row="2" Width="70" Height="70" Background="#000013">
-                       
+
                     </Button>
 
 
@@ -91,9 +91,9 @@
 
                 <!--Boton disparo-->
                 <HyperlinkButton Grid.Column="2" Width="450" Height="350" VerticalAlignment="Bottom" HorizontalAlignment="Right"  x:Name="Shoot_Button" Click="Shoot_Button_Click">
-                    
+
                 </HyperlinkButton>
-                <Image Grid.Column="2" HorizontalAlignment="Center" VerticalAlignment="Bottom" Margin="50" Width="200" Height="200" Source="Assets/Interfaz_DSI/ShootButton.png">
+                <Image Grid.Column="2" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,710,0,0" Width="200" Height="200" Source="Assets/Interfaz_DSI/ShootButton.png">
 
                 </Image>
             </Grid>
