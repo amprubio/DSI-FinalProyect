@@ -36,51 +36,51 @@
 
             <Grid x:Name="GridButton_0"  Visibility="Collapsed" Grid.ColumnSpan="3" HorizontalAlignment="Center" VerticalAlignment="Bottom" Width="1000" Height="800">
                 <StackPanel>
-                    <AppBarToggleButton Icon="Accept" Width="50" Height="50" HorizontalAlignment="Left" Margin="-12,0,0,0" VerticalAlignment="Top" Checked="AppBarToggleButton_Checked">
+                    <AppBarToggleButton Icon="Accept" Foreground="AntiqueWhite" Width="50" Height="50" HorizontalAlignment="Left" Margin="-12,0,0,0" VerticalAlignment="Top" Checked="AppBarToggleButton_Checked">
 
                     </AppBarToggleButton>
-                    <TextBlock Text="Modo Zurdo" Width="200" Height="80" FontSize="30" HorizontalAlignment="Left" Margin="80,-50,0,0"/>
+                    <TextBlock Text="Modo Zurdo" Foreground="AntiqueWhite" Width="200" Height="80" FontSize="30" HorizontalAlignment="Left" Margin="80,-50,0,0"/>
                 </StackPanel>
                 <StackPanel  HorizontalAlignment="Left" VerticalAlignment="Top"  Width="400" Height="100" Margin="0,100,0,0">
-                    <AppBarToggleButton Icon="Switch" Width="50" Height="50" HorizontalAlignment="Left" Margin="-12,0,0,0" VerticalAlignment="Top">
+                    <AppBarToggleButton Icon="Switch" Foreground="AntiqueWhite" Width="50" Height="50" HorizontalAlignment="Left" Margin="-12,0,0,0" VerticalAlignment="Top">
 
                     </AppBarToggleButton>
-                    <TextBlock Text=" Boton disparo" Width="200" Height="80" FontSize="30" HorizontalAlignment="Left" Margin="80,-50,0,0"/>
+                    <TextBlock Text=" Boton disparo" Foreground="AntiqueWhite"  Width="200" Height="80" FontSize="30" HorizontalAlignment="Left" Margin="80,-50,0,0"/>
 
                 </StackPanel>
                 <Image HorizontalAlignment="Right" Source="Assets/Sprite-0001.png" VerticalAlignment="Top" Width="500" Height="400"/>
             </Grid>
 
-            <Grid x:Name="GridButton_1" Visibility="Collapsed" Grid.ColumnSpan="3" HorizontalAlignment="Center" VerticalAlignment="Bottom" Width="1000" Height="800">
+            <Grid x:Name="GridButton_1" Visibility="Visible" Grid.ColumnSpan="3" HorizontalAlignment="Center" VerticalAlignment="Bottom" Width="1000" Height="800">
                 <StackPanel>
-                    <AppBarToggleButton Icon="MusicInfo" Width="50" Height="50" HorizontalAlignment="Left" Margin="-12,0,0,0" VerticalAlignment="Top" Checked="AppBarToggleButton_Checked">
+                    <AppBarToggleButton Icon="MusicInfo" Foreground="AntiqueWhite" Width="50" Height="50" HorizontalAlignment="Left" Margin="-12,0,0,0" VerticalAlignment="Top" Checked="AppBarToggleButton_Checked">
 
                     </AppBarToggleButton>
-                    <TextBlock Text="Volumen audio" Width="200" Height="80" FontSize="30" HorizontalAlignment="Left" Margin="80,-50,0,0"/>
+                    <TextBlock Text="Volumen audio" Foreground="AntiqueWhite" Width="200" Height="80" FontSize="30" HorizontalAlignment="Left" Margin="80,-50,0,0"/>
 
-                    <AppBarToggleButton Icon="Mute" Width="50" Height="50" HorizontalAlignment="Left" Margin="-12,0,0,0" VerticalAlignment="Top">
+                    <AppBarToggleButton Foreground="AntiqueWhite" Icon="Mute" Width="50" Height="50" HorizontalAlignment="Left" Margin="-12,0,0,0" VerticalAlignment="Top">
 
                     </AppBarToggleButton>
-                    <TextBlock Text="Desactivar Audio" Width="300" Height="80" FontSize="30" HorizontalAlignment="Left" Margin="80,-50,0,0"/>
+                    <TextBlock Text="Desactivar Audio" Foreground="AntiqueWhite" Width="300" Height="80" FontSize="30" HorizontalAlignment="Left" Margin="80,-50,0,0"/>
 
                 </StackPanel>
                 <StackPanel Margin="0,200,0,0" >
-                    <AppBarToggleButton Icon="MusicInfo" Width="50" Height="50" HorizontalAlignment="Left" Margin="-12,0,0,0" VerticalAlignment="Top" Checked="AppBarToggleButton_Checked">
+                    <AppBarToggleButton Icon="MusicInfo" Foreground="AntiqueWhite" Width="50" Height="50" HorizontalAlignment="Left" Margin="-12,0,0,0" VerticalAlignment="Top" Checked="AppBarToggleButton_Checked">
 
                     </AppBarToggleButton>
-                    <TextBlock Text="Volumen efectos" Width="250" Height="80" FontSize="30" HorizontalAlignment="Left" Margin="80,-50,0,0"/>
+                    <TextBlock Text="Volumen efectos" Foreground="AntiqueWhite" Width="250" Height="80" FontSize="30" HorizontalAlignment="Left" Margin="80,-50,0,0"/>
 
-                    <AppBarToggleButton Icon="Mute" Width="50" Height="50" HorizontalAlignment="Left" Margin="-12,0,0,0" VerticalAlignment="Top">
+                    <AppBarToggleButton Icon="Mute" Foreground="AntiqueWhite" Width="50" Height="50" HorizontalAlignment="Left" Margin="-12,0,0,0" VerticalAlignment="Top">
 
                     </AppBarToggleButton>
-                    <TextBlock Text="Desactivar efectos" Width="300" Height="80" FontSize="30" HorizontalAlignment="Left" Margin="80,-50,0,0"/>
+                    <TextBlock Text="Desactivar efectos" Width="300" Foreground="AntiqueWhite" Height="80" FontSize="30" HorizontalAlignment="Left" Margin="80,-50,0,0"/>
 
                 </StackPanel>
 
 
             </Grid>
 
-            <Grid x:Name="GridButton_2" Visibility="Visible" Grid.ColumnSpan="3" HorizontalAlignment="Center" VerticalAlignment="Bottom" Width="1000" Height="800">
+            <Grid x:Name="GridButton_2" Visibility="Collapsed" Grid.ColumnSpan="3" HorizontalAlignment="Center" VerticalAlignment="Bottom" Width="1000" Height="800">
                 <StackPanel>
                     <AppBarToggleButton Icon="Edit" Foreground="AntiqueWhite" Width="50" Height="50" HorizontalAlignment="Left" Margin="-12,0,0,0" VerticalAlignment="Top" Checked="AppBarToggleButton_Checked">
 
