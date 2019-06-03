@@ -51,7 +51,7 @@
                 </Grid>
                 <!-- Grid Cruceta-->
 
-                <AppBarButton Grid.Column="2" Click="AppBarButton_Click" Width="50" Height="50" Margin="0,0,90,0" HorizontalAlignment="Right" VerticalAlignment="Top" Icon="Pause"/>
+                <AppBarButton Grid.Column="2" Click="AppBarButton_Click" Width="80" Height="80" Margin="0,400,90,0" HorizontalAlignment="Right" VerticalAlignment="Top" Icon="Pause"/>
                 <Grid  x:Name="GridController" Margin="-50,30,0,50" Height="300" Width="300" VerticalAlignment="Bottom" Visibility="Visible">
                     <Grid.RowDefinitions>
                         <RowDefinition Height="2*"/>
@@ -61,11 +61,11 @@
                         <RowDefinition Height="2*"/>
                     </Grid.RowDefinitions>
                     <Grid.ColumnDefinitions>
-                        <ColumnDefinition Width="1*"/>
+                        <ColumnDefinition Width="2*"/>
                         <ColumnDefinition Width="0.5*"/>
-                        <ColumnDefinition Width="1*"/>
+                        <ColumnDefinition Width="2*"/>
                         <ColumnDefinition Width="0.5*"/>
-                        <ColumnDefinition Width="1*"/>
+                        <ColumnDefinition Width="2*"/>
                     </Grid.ColumnDefinitions>
 
 
