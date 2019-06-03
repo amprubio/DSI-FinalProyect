@@ -21,15 +21,15 @@
                 <ColumnDefinition Width="3*"/>
 
             </Grid.ColumnDefinitions>
-            
+
             <!--GridRow 0 es para los botones de atras y cerrar-->
-            <Button x:Name="Button_0" Grid.Column="0" Click="Button_0_Click" Margin="50" HorizontalAlignment="Right" VerticalAlignment="Top" Width="200" Height="80">
+            <Button x:Name="Button_0" Background="DarkCyan" Foreground="AntiqueWhite" Grid.Column="0" Click="Button_0_Click" Margin="50" HorizontalAlignment="Right" VerticalAlignment="Top" Width="200" Height="80">
                 <TextBlock Text="Controles" Width="150" Height="70" FontSize="30"/>
             </Button>
-            <Button  x:Name="Button_1" Grid.Column="1" Click="Button_1_Click" Margin="50" HorizontalAlignment="Center" VerticalAlignment="Top" Width="200" Height="80">
+            <Button  x:Name="Button_1" Background="DarkCyan" Foreground="AntiqueWhite" Grid.Column="1" Click="Button_1_Click" Margin="50" HorizontalAlignment="Center" VerticalAlignment="Top" Width="200" Height="80">
                 <TextBlock Text="Audio" Width="150" Height="70" FontSize="30"/>
             </Button>
-            <Button x:Name="Button_2" Grid.Column="2" Click="Button_2_Click" Margin="50" HorizontalAlignment="Left" VerticalAlignment="Top" Width="200" Height="80">
+            <Button x:Name="Button_2" Background="DarkCyan" Foreground="AntiqueWhite" Grid.Column="2" Click="Button_2_Click" Margin="50" HorizontalAlignment="Left" VerticalAlignment="Top" Width="200" Height="80">
                 <TextBlock Text="Perfil" Width="150" Height="70" FontSize="30"/>
             </Button>
 
@@ -57,7 +57,7 @@
 
                     </AppBarToggleButton>
                     <TextBlock Text="Volumen audio" Width="200" Height="80" FontSize="30" HorizontalAlignment="Left" Margin="80,-50,0,0"/>
-               
+
                     <AppBarToggleButton Icon="Mute" Width="50" Height="50" HorizontalAlignment="Left" Margin="-12,0,0,0" VerticalAlignment="Top">
 
                     </AppBarToggleButton>
@@ -82,23 +82,23 @@
 
             <Grid x:Name="GridButton_2" Visibility="Visible" Grid.ColumnSpan="3" HorizontalAlignment="Center" VerticalAlignment="Bottom" Width="1000" Height="800">
                 <StackPanel>
-                    <AppBarToggleButton Icon="Edit" Width="50" Height="50" HorizontalAlignment="Left" Margin="-12,0,0,0" VerticalAlignment="Top" Checked="AppBarToggleButton_Checked">
+                    <AppBarToggleButton Icon="Edit" Foreground="AntiqueWhite" Width="50" Height="50" HorizontalAlignment="Left" Margin="-12,0,0,0" VerticalAlignment="Top" Checked="AppBarToggleButton_Checked">
 
                     </AppBarToggleButton>
-                    <TextBlock x:Name="NameText" Text="Name: " Width="200" Height="80" FontSize="30" HorizontalAlignment="Left" Margin="80,-50,0,0"/>
+                    <TextBlock x:Name="NameText" Foreground="AntiqueWhite" Text="Name: " Width="200" Height="80" FontSize="30" HorizontalAlignment="Left" Margin="80,-50,0,0"/>
                 </StackPanel>
                 <StackPanel Margin="0,150,0,0">
-                  
-                    <TextBlock x:Name="EnemiesInfo" Text="Enemigos muertos" Width="250" Height="80" FontSize="30" HorizontalAlignment="Left" Margin="80,-50,0,0"/>
 
-                    <AppBarToggleButton Icon="Delete" Width="50" Height="50" HorizontalAlignment="Left" Margin="0,0,0,-60"/>
+                    <TextBlock x:Name="EnemiesInfo" Text="Enemigos muertos" Width="250" Height="80" FontSize="30" Foreground="AntiqueWhite" HorizontalAlignment="Left" Margin="80,-50,0,0"/>
+
+                    <AppBarToggleButton Icon="Delete" Width="50" Height="50" Foreground="AntiqueWhite" HorizontalAlignment="Left" Margin="0,0,0,-60"/>
 
 
-                    <TextBlock Text="Borrar cuenta" Width="300" Height="80" FontSize="30" HorizontalAlignment="Left" Margin="80,0,0,0"/>
+                    <TextBlock Foreground="AntiqueWhite" Text="Borrar cuenta" Width="300" Height="80" FontSize="30" HorizontalAlignment="Left" Margin="80,0,0,0"/>
 
                 </StackPanel>
                 <TextBlock  Text="EXP:" FontSize="30" x:Name="EXP_Text" HorizontalAlignment="Right" Width="150" Height="40" Margin="100"/>
-                <Image Source="Assets/Interfaz_DSI/SpriteUsuario.png" HorizontalAlignment="Right" VerticalAlignment="Top" Width="300" Height="300" Margin="70" />
+                <Image Source="Assets/Interfaz_DSI/SpriteUsuario.png" HorizontalAlignment="Right" VerticalAlignment="Top" Width="300" Height="300" Margin="0,76,70,0" />
                 <AppBarButton Icon="Edit" HorizontalAlignment="Right"/>
             </Grid>
         </Grid>
