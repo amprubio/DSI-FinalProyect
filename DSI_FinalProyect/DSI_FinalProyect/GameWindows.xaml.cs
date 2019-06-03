@@ -77,5 +77,10 @@ namespace DSi_FinalProyect
             var rootFrame = new Frame();
             rootFrame.Navigate(typeof(Map));
         }
+
+        private void AppBarButton_Click(object sender, RoutedEventArgs e)
+        {
+            PauseGrid.Visibility = Visibility.Visible;
+        }
     }
 }
